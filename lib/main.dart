@@ -40,13 +40,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        Text('しゅんや'),
+        title:Text('しゅんや'),
       ),
       body:Container(
         color: Colors.red[400],
         width: double.infinity,
         height: double.infinity,
-        Chilld:Center(
+        child:Center(
           child: Text('saaaaa'),
         ),
       )
