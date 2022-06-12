@@ -40,15 +40,27 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text('しゅんや'),
+        title:const Text('しゅんや'),
       ),
       body:Container(
-        color: Colors.red[400],
+        color: Color.fromARGB(255, 27, 35, 86),
         width: double.infinity,
         height: double.infinity,
-        child:Center(
-          child: Text('saaaaa'),
-        ),
+        // Columnにすると、子Widgetが上下に並ぶ
+        // Rowにすると、子Widgetが左右に並ぶ
+        child:Row(
+          children: [
+            Text('syunyadesu'),
+            Text('さうな'),
+            Container(
+              width:50,
+              height: 40,
+              color: Colors.blue,
+            ),
+            Text('syunyadesu'),
+            Text('syunyadesu'),
+            Text('syunyadesu'),
+          ],),
       )
     );
   }
