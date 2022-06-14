@@ -14,8 +14,12 @@ class FirstPage extends StatelessWidget {
       ),
       body:ListView.builder(
         itemCount: entries.length,
+        // indexはリストのインデックス
         itemBuilder: (BuildContext context, int index) {
-          return  Center(child: Text('Entry ${entries[index]}'));
+          return  Center(child: Text('Entry ${entries[index]}',
+          style: TextStyle(fontSize: 40),
+          ),
+          );
         }),
     );
   }
