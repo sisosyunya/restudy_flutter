@@ -15,10 +15,12 @@ class FirstPage extends StatelessWidget {
           onPressed: (){
             //ボタン押したときに呼ばれるコードを書く
             // MaterialPageRouteは画面遷移を行うためのクラス
-            
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SecondPage()),
+              MaterialPageRoute(builder: (context) => SecondPage('aaa'),
+              // fullscreenDialog: trueで画面遷移時に下から出てくる
+              fullscreenDialog: true,
+              ),
             );
           },
           child:const Text('次の画面へ'),
