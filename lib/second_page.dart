@@ -15,6 +15,9 @@ class SecondPage extends StatelessWidget {
       body:Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Image.asset('images/img1.jpg',
+          height: 200,
+          ),
           Text(name,
           style: TextStyle(
             fontSize: 50,
